@@ -1,0 +1,12 @@
+body {
+  background-color: black;
+  font-family: sans-serif, Arial;
+  color: white;
+}
+
+.contenitore {
+  display: block;
+  position: inherit;
+  font-size: 7em;
+}
+

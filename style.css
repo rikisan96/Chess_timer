@@ -1,12 +1,49 @@
+/*
+ * Per manterere un layout responsive e non avere rogne:
+    settare le dimensioni iniziali, per poi adattare il resto dei component in
+    base a ciò che scrivo. 
+ * */
+
 body {
-  background-color: black;
+  background-color: #613502;
   font-family: sans-serif, Arial;
   color: white;
+  text-align: center;
+  margin: 0px;
+  max-width: 900px;
 }
 
-.contenitore {
-  display: block;
-  position: inherit;
-  font-size: 7em;
+#contenitore {
+  display: flex;
+  position : relative;
+  font-size: 6em;
+  color: white;
+  width: fit-content;
+  height: fit-content;
+  padding: 10%, 49%, 30%, 49%;
+}
+.timerP1{
+  position: absolute;
+  left: 35%;right: 1%;
+
 }
 
+.timerP2{
+  color: black;
+  position: absolute;
+  top: 60%; left: 1%
+}
+
+img{
+  max-width:375px;
+  max-height:375px;
+}
+
+button{
+  background-color: #c4a757;
+  border: 0px;
+  padding: 0.5em 1em;
+  font-size: 1.5em;
+
+ 
+}

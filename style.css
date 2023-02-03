@@ -7,29 +7,32 @@
 body {
   background-color: #613502;
   font-family: sans-serif, Arial;
-  color: white;
+  color: #ffffff;
   text-align: center;
   margin: 0px;
-  max-width: 900px;
+  max-width: 380px; 
 }
-
+p{
+  font-size: 1rem;
+  text-align: left;
+  text-overflow: wrap;
+  -webkit-user-select: none;
+}
 #contenitore {
   display: flex;
   position : relative;
   font-size: 6em;
   color: white;
   width: fit-content;
-  height: fit-content;
-  padding: 10%, 49%, 30%, 49%;
+  padding: 10%, 49%, 30%, 50%;
 }
-.timerP1{
+#p1{
   position: absolute;
   left: 35%;right: 1%;
-
 }
 
-.timerP2{
-  color: black;
+#p2{
+  color: #000000;
   position: absolute;
   top: 60%; left: 1%
 }
@@ -40,10 +43,30 @@ img{
 }
 
 button{
+  position: relative;
+  display: inline-grid;
   background-color: #c4a757;
   border: 0px;
   padding: 0.5em 1em;
   font-size: 1.5em;
+  color: #000000;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 4px 4px ;
+  -webkit-user-select: none;
+}
+button:active{
+  box-shadow: 2px 2px;
+  transform: translateY(4px);
+}
 
- 
+.istruzioni:not(p){
+  padding: 5px;
+  position: relative;
+  bottom: -1em;
+  background-color: #dbb75d;  
+  color: white;
+  border: 2px solid black;
+  border-radius: 4px;
+  -webkit-user-select: none;
 }

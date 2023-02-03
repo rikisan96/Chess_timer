@@ -3,27 +3,36 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Timer Scacchi Scam</title>
+    <title>Timer Scacchi</title>
+      <link rel="icon" type="image/x-icon" href="icona_timer_scacchi.png">
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header style="color: white"><h1>Timer Scacchi Scam</h1></header>
+    <header style="color: white; text-align: left;"><h1>Timer Scacchi</h1></header>
     <main></main>
     <div id="contenitore">
-      <div class="timerP1">00:00</div>
-      <div id="spacer"></div>
-      <div class="timerP2">00:00</div>
-      <img src="scacchiera.jpg">
+      <div class="timer unselectable" id="p1"></div>
+      <div class="timer unselectable" id="p1"></div>
+      <div class="timer unselectable" id="p2"></div>
+      <div class="timer unselectable" id="p2"></div>
+      <img src="scacchiera.jpg" class="unselectable">
     </div>
         <section name="selettore tempo">
       <p>
       Formato tempo (minuti):<br />
       </p>
-      <button>60'</button>
-      <button>30'</button>
-      <button>15'</button>
+      <div>
+      <button>30</button>
+      <button>60</button>
+      <button>90</button>
+      </div>
+      <div class="istruzioni"><p class="istruzioni">
+        Istruzioni:<br>
+        Premi su uno dei bottoni sopra per settare il timer.
+        Tap su un timer per far partire il countdown. 
+      Una pressione su uno dei timer farà stoppare l'altro e viceversa.</p></div>
     </section>
     <script src="script.js" async defer></script>
   </body>

@@ -14,8 +14,6 @@
     <main></main>
     <div id="contenitore">
       <div class="timer unselectable" id="p1"></div>
-      <div class="timer unselectable" id="p1"></div>
-      <div class="timer unselectable" id="p2"></div>
       <div class="timer unselectable" id="p2"></div>
       <img src="scacchiera.jpg" class="unselectable">
     </div>
@@ -24,9 +22,10 @@
       Formato tempo (minuti):<br />
       </p>
       <div>
-      <button>30</button>
-      <button>60</button>
-      <button>90</button>
+      <button onclick="timerStop()">STOP</button>
+      <button class="minutes">15</button>
+      <button class="minutes">30</button>
+      <button class="minutes">45</button>
       </div>
       <div class="istruzioni"><p class="istruzioni">
         Istruzioni:<br>
